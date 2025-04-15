@@ -1,0 +1,351 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"int",
+				"printf"
+			],
+			[
+				"Mouth",
+				"MouthHeight"
+			],
+			[
+				"Eyebro",
+				"EyebrowRatioR"
+			],
+			[
+				"Eye",
+				"EyebrowRatioL"
+			],
+			[
+				"norma",
+				"normalizedMouthLandmarkU"
+			],
+			[
+				"Wid",
+				"WidthC1"
+			],
+			[
+				"normalizedMout",
+				"normalizedMouthLandmarkU"
+			],
+			[
+				"normlizedWi",
+				"normalizedWidthLandmarkC"
+			],
+			[
+				"normal",
+				"normalizedEyebrowLandmarkR"
+			],
+			[
+				"normalizedWi",
+				"normalizedWidthLandmarkL"
+			],
+			[
+				"normalizedEy",
+				"normalizedEyebrowLandmarkR"
+			],
+			[
+				"normalizedMo",
+				"normalizedMouthLandmarkU"
+			],
+			[
+				"normalizedMouth",
+				"normalizedMouthLandmarkD"
+			],
+			[
+				"normalizedMou",
+				"normalizedMouthLandmarkU"
+			],
+			[
+				"Mou",
+				"MouthWidthR"
+			],
+			[
+				"normalizedWid",
+				"normalizedWidthLengthR"
+			],
+			[
+				"pixelCoordinatesMouth",
+				"pixelCoordinatesMouthLandmarkR"
+			],
+			[
+				"normalizedW",
+				"normalizedWidthLandmarkL"
+			],
+			[
+				"pii",
+				"pixelCoordinatesWidthLandmarkR"
+			],
+			[
+				"mp",
+				"mp_holistic"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.odin",
+			"settings":
+			{
+				"buffer_size": 1260,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package control remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"lsp",
+				"LSP: Disable Language Server Globally"
+			],
+			[
+				"lsp ena",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/peperronii/Documents/odin_projects/hellope/day4/day4.sublime-project",
+		"/etc/paths",
+		"/etc/path",
+		"/opt/homebrew/Cellar/odin/2024-12/libexec/core/.DS_Store",
+		"/Users/peperronii/Documents/odin_projects/hellope/day4/main.odin",
+		"/Users/peperronii/Documents/odin_projects/hellope/core alias",
+		"/Users/peperronii/Documents/odin_projects/hellope/main.odin",
+		"/Users/peperronii/Documents/odin_projects/hellope/linked_list/main.odin",
+		"/Users/peperronii/Documents/odin_projects/hellope/core/mem/tracking_allocator.odin",
+		"/Users/peperronii/Documents/odin_projects/hellope/core/unicode/utf8/utf8.odin",
+		"/Users/peperronii/Library/Application Support/Sublime Text/Packages/User/LSP.sublime-settings",
+		"/Users/peperronii/Downloads/ols-master/build.sh",
+		"/Users/peperronii/Library/Application Support/Sublime Text/Packages/Default/Preferences.sublime-settings",
+		"/Users/peperronii/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/Users/peperronii/Documents/odin_projects/hellope/test/test.odin",
+		"/Users/peperronii/Documents/odin_projects/hellope/test/untitled.odin",
+		"/Users/peperronii/Library/Application Support/Sublime Text/Packages/User/Odin.sublime-build"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.odin",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Odin/Odin.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 108.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Odin.sublime-build",
+	"project": "day4.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 305.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Node"
+			],
+			[
+				"rune pos",
+				"rune_at_pos"
+			]
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

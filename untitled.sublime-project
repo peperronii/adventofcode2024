@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Applications/Odin/core"
+		},
+		{
+			"path": "."
+		},
+	],
+	 "build_systems":
+    [
+        {
+            "name": "odin project run",
+            "shell_cmd": "odin run .",
+            "file_regex": "^(.+)\\(([0-9]+):([0-9]+)\\) (.+)$"
+        }
+    ]
+}
