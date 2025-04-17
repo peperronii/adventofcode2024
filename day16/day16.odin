@@ -9,21 +9,24 @@ import str "core:strings"
 import "core:time"
 
 SIZE :: 141
-State :: enum {
-	start,
-	end,
-	path,
-	wall,
+
+Junction :: struct {
+	parent:        ^Junction,
+	left_child:    ^Junction,
+	right_child:   ^Junction,
+	forward_child: ^Junction,
+	score:         int,
+	direction:     Dir,
 }
 
-Dir :: enum {
+Dir :: enum u8 {
 	N,
 	E,
 	S,
 	W,
 }
 
-DirVec := [Dir][2]int {
+DirVec :: [Dir][2]int {
 	.N = {-1, 0},
 	.E = {0, 1},
 	.S = {1, 0},
@@ -45,11 +48,12 @@ Turn :: struct {
 	dir:   Dir,
 }
 
-State_or_Passed :: union {
-	State,
-	int,
+State :: enum {
+	path,
+	wall,
+	start,
+	end,
 }
-
 main :: proc() {
 	//set tracking allocator
 	tracking_allocator: mem.Tracking_Allocator
@@ -73,7 +77,8 @@ main :: proc() {
 	fmt.println(time.stopwatch_duration(t^))
 }
 
-area: [SIZE][SIZE]State_or_Passed
+area: [SIZE][SIZE]State
+
 start: [2]int
 end: [2]int
 
@@ -103,28 +108,9 @@ solve :: proc() -> (sum: int, ok: bool) {
 		}
 	}
 
-	// BFS,
-	q := make([dynamic]Turn)
-	defer delete(q)
-	append(&q, Turn{pos = start, dir = .E})
-	for {
-		t := pop_front_safe(&q) or_break
-		fmt.println(t)
-		for {
-			p := t.pos
-			switch type in area[p.x][p.y] 
-			{
-			case State:
-				if area[p.x][p.y] == .end do break
-				if area[p.x][p.y] == .wall do break
-				p = t.pos + DirVec[rotate_cw(t.dir)]
-				if area[p.x][p.y] == .path do append(&q, Turn{pos = p, dir = rotate_cw(t.dir), depth = t.depth + 1, step = t.step + 1})
-				p = t.pos + DirVec[rotate_acw(t.dir)]
-				if area[p.x][p.y] == .path do append(&q, Turn{pos = p, dir = rotate_acw(t.dir), depth = t.depth + 1, step = t.step + 1})
-				area[t.pos.x][t.pos.y] = (t.depth * 1000) + t.step
-				t.pos += DirVec[t.dir]
-				t.step += 1
-		}
-	}
+	e := [2]int{0, 0} + DirVec[.N]
+
+	junction_map := make(map[[2]int]Junction)
+	defer delete(junction_map)
 	return 0, false
 }
